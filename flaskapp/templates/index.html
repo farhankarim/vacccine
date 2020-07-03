@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    <ul>
+        <li><a href="http://">Home</a></li>
+        <li><a href="http://">About</a></li>
+        <li><a href="http://">Contact</a></li>
+    </ul>
+    <div class="container">
+        {% if user %}
+        <h1>{{user}}</h1>
+        {% else %}
+        <h1>Hello World</h1>
+        {% endif %}
+        <ul>
+            {% for num in nums %}
+            <li> {{num}} </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+    <footer>
+        <small>copyright &copy; Farhan 2020</small>
+        <a href="#">farhan@gmail.com</a>
+    </footer>
+</body>
+</html>

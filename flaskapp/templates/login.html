@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% from "includes/_helper.html" import render_field %}
+
+{% block content%}
+
+<div class="container">
+<br>
+<h3>Login User</h3> <br>
+{% include 'includes/_flash.html' %}
+
+<form action="" method="POST">
+    {{form.hidden_tag()}}
+
+    <div class="form-group">
+        {{render_field(form.email,class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.password,class_="form-control")}}
+    </div>
+    {{form.submit}}
+</form>
+</div>
+
+{% endblock %}

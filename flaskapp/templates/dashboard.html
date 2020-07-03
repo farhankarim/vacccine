@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% from "includes/_helper.html" import render_field %}
+
+{% block content%}
+
+<div class="container">
+<br>
+{% include 'includes/_flash.html' %}
+<h3>Dashboard</h3> <br>
+<h5>{{current_user.username }}</h5>
+</div>
+
+{% endblock %}
